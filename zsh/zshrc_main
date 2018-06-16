@@ -514,7 +514,7 @@ $(prompt_char) '
 #%_
 
 function prompt_ip {
-  ip address | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | head -1
+  ip address | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'| grep -v '127.0.0.1' | grep -v '172.17.0.1'| head -1
 }
 
 #RPROMPT='%{$fg_lgray%}[%*]%{$reset_color%}'
