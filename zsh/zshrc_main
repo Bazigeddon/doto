@@ -471,7 +471,7 @@ function vim_sf() {
 #alias vim=vim_sf
 
 #HISTFILE=/root/.zsh-histfile
-HISTFILE=/home/vulder/.zsh-histfile
+HISTFILE=$HOME/.zsh-histfile
 HISTSIZE=5000
 SAVEHIST=5000
 
