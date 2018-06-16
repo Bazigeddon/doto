@@ -481,7 +481,6 @@ fg_user=$FG[237]	# user at the start of the prompt (cyan)
 fg_at=$FG[125]          # @-sign between user and host (purplisch)
 fg_host=$FG[091]	# host name (cyan)
 fg_oA=$FG[214]	        # path of your current location (orange)
-fg_oB=$FG[237]		# grey
 fg_lineStart=$FG[237]	# character at the beginning of each line (grey)
 fg_lgray=$FG[245]	# ip address on the right site of the prompt (grey)
 
@@ -490,7 +489,8 @@ if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then fg_oA=$FG[213]; fi	# ssh
 #Other colour combinations
 # fg_oA=$FG[227]	# yellow
 # fg_oA=$FG[190]	# green
-# fg_oB=$FG[038]	        # cyan
+# fg_oB=$FG[237]	# grey
+# fg_oB=$FG[038]	# cyan
 # fg_host=$FG[121]	# turkis
 
 # PROMPT='$FG[154]%~%'
