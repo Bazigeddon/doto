@@ -1,8 +1,12 @@
 # $reset_color
 
-#source /root/zgen/zgen.zsh
+#Load all sources needed for this zsh run configuration
+source ~/.tmuxinator/tmuxinator.zsh
+#source /root/zgen/zgen.zsh # if you want to run this script for the root home
 source ~/.zgen/zgen.zsh
 source ~/.zsh_plugins.zsh
+
+#load all plugins you want from the .zsh_plugins.zsh file
 load_plugins
 
 # ______________________________________________
@@ -440,4 +444,3 @@ export PATH="$PATH:/home/vulder/bin/"
 export PATH="$PATH:/home/vulder/.local/bin/"
 export PATH="/usr/lib/llvm/7_old/bin/:$PATH"
 
-source ~/.tmuxinator/tmuxinator.zsh
