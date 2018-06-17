@@ -1,3 +1,7 @@
+# This file contains a collection of many plugins supported by oh-my-zsh.
+# To load a new plugin add any line, that is currently a comment
+# or make a line a comment to remove the plugin from your configuration.
+
 function load_plugins() {
   if ! zgen saved; then
     echo "_______________________[Creating a zgen save]"
